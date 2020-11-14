@@ -11,6 +11,8 @@ sudo yum install php php-mysqlnd php-fpm -y
 php --version
 systemctl start php-fpm.service
 systemctl enable php-fpm.service
+<?php phpinfo(); ?> >> /var/www/html/my.php
+
 
 #installtion of sql sever 
 
@@ -18,6 +20,7 @@ yum -y install @mysql
 systemctl start mysqld
 systemctl enable --now mysqld
 systemctl status mysqld
+
 
 # this is only if you want to do security task 
 # mysql_secure_installation
