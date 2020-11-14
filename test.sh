@@ -11,7 +11,16 @@ sudo yum install php php-mysqlnd php-fpm -y
 php --version
 systemctl start php-fpm.service
 systemctl enable php-fpm.service
-<?php phpinfo(); ?> >> /var/www/html/my.php
+<?php
+
+// Show all information, defaults to INFO_ALL
+phpinfo();
+
+?>  /user/etc/www/html/my.php
+
+<?php
+
+phpinfo(); >>  user/etc/www/html/my1.php
 
 
 #installtion of sql sever 
