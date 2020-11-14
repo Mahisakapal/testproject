@@ -14,11 +14,10 @@ systemctl enable php-fpm.service
 
 #installtion of sql sever 
 
-yum -y install @mysql 
-systemctl start mysqld
-systemctl enable --now mysqld
-systemctl status mysqld
-
+sudo dnf install mysql-server -y
+sudo systemctl start mysqld.service
+sudo systemctl status mysqld
+sudo systemctl enable mysqld
 
 # this is only if you want to do security task 
 # mysql_secure_installation
