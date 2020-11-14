@@ -15,7 +15,7 @@ systemctl enable php-fpm.service
 #installtion of sql sever 
 
 sudo yum install mysql -y
-sudo systemctl start mysqld.service
+sudo systemctl start mysqld
 sudo systemctl status mysqld
 sudo systemctl enable mysqld
 
