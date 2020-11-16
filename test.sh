@@ -35,9 +35,21 @@ sudo systemctl enable mysqld
 # mysql_secure_installation
 
 # mysql -u root -p     #use this if your not root user else use below
+
 mysql
+
 create database mahi;
-GRANT ALL ON tecmint.* TO mahi@test IDENTIFIED BY 'test123';
+
+CREATE TABLE mytest (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+); 
+
+show tables ;
+
 
 # sudo systemctl status mysqld
 
