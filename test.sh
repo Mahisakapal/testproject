@@ -6,10 +6,10 @@
 #Note	: Befor ruing script please check once and run with super user
 ########################################################################
 
-#instation of ngnix
+#instation of nginx
 
-echo "instaling ngnix"
-sudo yum install ngnix -y
+echo "instaling nginx"
+sudo yum install nginx -y
 sudo systemctl start nginx 
 sudo systemctl enable nginx
 
