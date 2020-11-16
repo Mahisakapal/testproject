@@ -35,16 +35,16 @@ sudo systemctl enable mysqld
 # this is only if you want to do security task 
 # mysql_secure_installation
 
-mysql -u root -p
+# mysql -u root -p
 create database mahi;
 GRANT ALL ON tecmint.* TO mahi@test IDENTIFIED BY 'test123';
 exit
 
-#this is bkp database mariyaDB
-#sudo dnf install mariadb-server -y
-#sudo systemctl start mariadb
-#sudo mysql_secure_installation
-#sudo mysql
-#mysql -u %usr% -p
-#SHOW DATABASES;
+# this is bkp database mariyaDB
+# sudo dnf install mariadb-server -y
+# sudo systemctl start mariadb
+# sudo mysql_secure_installation
+# sudo mysql
+# mysql -u %usr% -p
+# SHOW DATABASES;
 
