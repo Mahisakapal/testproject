@@ -50,6 +50,11 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
 show tables ;
 
+# open firewall to outside if need 
+# firewall-cmd --permanent --add-service=http
+# firewall-cmd --permanent --add-service=mysql      # we are not allowing db server to expose outsied.
+# firewall-cmd --reload                             # it will reload firela only need onprime bcoz cloud have SG
+
 
 # sudo systemctl status mysqld
 
