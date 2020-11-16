@@ -29,7 +29,6 @@ systemctl enable php-fpm.service
 echo "instaling mysql-server"
 sudo yum install mysql-server -y
 sudo systemctl start mysqld
-sudo systemctl status mysqld
 sudo systemctl enable mysqld
 
 # this is only if you want to do security task 
@@ -38,6 +37,9 @@ sudo systemctl enable mysqld
 # mysql -u root -p
 create database mahi;
 GRANT ALL ON tecmint.* TO mahi@test IDENTIFIED BY 'test123';
+
+# sudo systemctl status mysqld
+
 exit
 
 # this is bkp database mariyaDB
